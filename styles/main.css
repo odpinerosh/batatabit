@@ -131,3 +131,49 @@ main {
     margin-bottom: 30px;
     text-align: center;
 }
+
+.ex-rate_table-container {
+    background-color: var(--just-white);
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width: 900px;
+    min-width: 200px;
+    width: 200px;
+}
+
+.ex-rate_table-container > h2 {
+    background-color: var(--off-white);
+    color: #FF9536;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    padding-bottom: 1.1rem;
+}
+
+.coins-table {
+    width: 200px;
+    min-width: 200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #B5B0AC;
+}
+
+.coins-table tr td:first-child {
+    border-right: solid 1px #B5B0AC;
+    border-bottom: solid 1px #B5B0AC;
+}
+
+.coin-svg {
+    display: inline;
+    padding-left: 0.5rem;
+}
+
+.aux {
+    height: 320px;
+    width: 100%
+}
