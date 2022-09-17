@@ -133,17 +133,17 @@ main {
 }
 
 .ex-rate_table-container {
-    background-color: var(--just-white);
-    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
     margin: 0 auto;
     max-width: 900px;
-    min-width: 200px;
-    width: 200px;
+    min-width: 230px;
+    width: 230px;
 }
 
-.ex-rate_table-container > h2 {
+.table-cont > h2 {
     background-color: var(--off-white);
-    color: #FF9536;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -151,26 +151,92 @@ main {
     padding-bottom: 1.1rem;
 }
 
-.coins-table {
-    width: 200px;
-    min-width: 200px;
-    font-family: 'Inter';
+.coin-table-cont > h2 {
+    color: var(--bitcoin-orange);
+}
+
+.comm-table-cont > h2 {
+    color: var(--secondary-blue);
+}
+
+.table {
+    background-color: var(--off-white);
+    color: #B5B0AC;
+    gap: 1px;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;
-    line-height: 40px;
+    line-height: 30px;
     letter-spacing: -0.02em;
-    color: #B5B0AC;
+    min-width: 230px;
+    width: 230px;
 }
 
-.coins-table tr td:first-child {
-    border-right: solid 1px #B5B0AC;
-    border-bottom: solid 1px #B5B0AC;
+.table tr td {
+    background-color: var(--just-white);
+    padding: 8px;
 }
 
-.coin-svg {
-    display: inline;
-    padding-left: 0.5rem;
+.table_downleft {
+    border-radius: 0 0 0 10px;
+}
+
+.table_upleft {
+    border-radius: 10px 0 0 0;
+}
+
+.table_upright {
+    border-radius: 0 10px 0 0;
+}
+
+.table_downright {
+    border-radius: 0 0 10px 0;
+}
+
+.table td:first-child {
+    width: 50%;
+}
+
+.table td:last-child {
+    text-align: center;
+}
+
+.table td:last-child span {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 15px;
+    margin-left: 10px;
+    width: 15px;
+}
+
+.coins-table .coins-table_down {
+    background-image: url('../assets/icons/trending-down.svg');
+}
+
+.coins-table .coins-table_up {
+    background-image: url('../assets/icons/trending-up.svg');
+}
+
+.table_footer {
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.9px;
+    margin: 10px auto;
+    padding: 14px 8px;
+    text-align: center;
+    width: 90%;
+}
+
+.coin-table-cont .table_footer {
+    background-color: var(--soft-orange);
+}
+
+.comm-table-cont .table_footer {
+    background-color: var(--soft-blue);
 }
 
 .aux {
