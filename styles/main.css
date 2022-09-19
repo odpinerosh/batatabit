@@ -196,6 +196,7 @@ main {
 
 .table td:first-child {
     width: 50%;
+    padding-left: 2rem;
 }
 
 .table td:last-child {
