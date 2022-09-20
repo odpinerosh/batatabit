@@ -133,41 +133,12 @@ main {
 }
 
 .ex-rate_table-container {
-    align-content: center;
-    display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    grid-template-rows: 1fr;
-    grid-template-areas: 'left-btn tables right-btn';
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 500px;
-    min-width: 320px;
-    width: 320px;
-}
-
-.table-button {
-    justify-self: center;
-    align-self: center;
-}
-
-.table-left-button {
-    grid-area: left-btn;
-}
-
-.table-right-button {
-    grid-area: right-btn;
-}
-
-.ex-rate_tables-container {
-    align-self: center;
     display: flex;
     flex-direction: row;
-    grid-area: tables;
-    justify-self: center;
+    overflow: scroll;
     margin: 0 auto;
     max-width: 900px;
     min-width: 230px;
-    overflow: scroll;
     width: 230px;
 }
 
@@ -186,20 +157,6 @@ main {
 
 .comm-table-cont > h2 {
     color: var(--secondary-blue);
-}
-
-.coin-table-leftbtn, .coin-table-rightbtn {
-    background-image: url('../assets/icons/right-arrow.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 15px;
-    position: absolute;
-    width: 15px;
-}
-
-.coin-table-leftbtn {
-    transform: rotate(180deg);
 }
 
 .table {
