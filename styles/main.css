@@ -132,13 +132,52 @@ main {
     text-align: center;
 }
 
+.tables-wrapper {
+    display: grid;
+    grid-template-columns: 20px calc(1fr - 20px) 20px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'btn-left tables btn-right';
+    margin: 0 auto;
+    width: 300px;
+
+}
+
+.tables-wrapper .btn {
+    align-self: center;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;    
+    height: 10px;
+    position: static;
+    width: 10px;
+
+}
+
+.tables-wrapper .btn-left {
+    background-image: url('../assets/icons/right-arrow.svg');
+    grid-area: btn-left;
+    justify-self: right;
+    transform: rotate(180deg);
+}
+
+.tables-wrapper .btn-right {
+    background-image: url('../assets/icons/right-arrow.svg');
+    grid-area: btn-right;
+    justify-self: left;
+}
+
 .ex-rate_table-container {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    grid-area: tables;
+    overflow-x: scroll;
+    overflow-y: hidden;
     margin: 0 auto;
     max-width: 900px;
     min-width: 230px;
+    scroll-behavior: smooth;
     width: 230px;
 }
 
