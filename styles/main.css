@@ -89,14 +89,14 @@ main {
 }
 
 .ex-rate {
-    height: auto;
+    height: 850px;
     min-width: 320px;
     width: 100%;    
     padding-top: 80px;
     padding-bottom: 30px;
 }
 
-.backgnd {
+.ex-rate_backgnd {
     background-image: url('../assets/img/bitcoin.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -278,6 +278,27 @@ main {
 .comm-table-cont .table_footer {
     background-color: var(--soft-blue);
 }
+
+.ex-rate_batata {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+
+.span-batata {
+    background-image: url('../assets/icons/batata.svg');
+    height: 24px;
+    margin: 10px auto 0 auto;
+    width: 41px;
+}
+
+.features {
+    background-color: var(--warm-black);
+    height: 320px;
+    width: 320px;
+}
+
 
 .aux {
     height: 320px;
