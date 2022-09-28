@@ -432,8 +432,8 @@ main {
 .plans-text-container {
     height: auto;
     margin: 0 auto;
+    min-width: 288px;
     width: 90%;
-
 }
 
 .plans-text-container h2 {
@@ -449,6 +449,7 @@ main {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.8rem;
+    padding-bottom: 4rem;
 }
 
 .plans-cards-container {
@@ -459,47 +460,54 @@ main {
 }
 
 .plan-card {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    justify-content: space-evenly;
     position: relative;
     padding: 0 15px;
     width: 70%;
+    margin: 0 auto;
     max-width: 300px;
-    min-width: 190px;
+    min-width: 230px;
     height: 250px;
     background: var(--just-white);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: 8px;
 }
 
-.card-top_button {
+.plan-card--topbutton {
     align-items: center;
     align-self: center;
     background: var(--bitcoin-orange);
     border-radius: 8px;
     color: var(--just-white);
     display: flex;
-    justify-content: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 15px;
-    text-align: center;
     height: 31px;
+    justify-content: center;
+    left: 20%;
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    top: -15px;
     width: 60%;
 }
 
-.card-period {
+.plan-card--body {
+    height: 90%;
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+.plan-card--body-period {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     color:var(--just-black);
 }
 
-.plan-price {
+.plan-card--body-price {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -509,17 +517,19 @@ main {
     color: var(--just-black);
 }
 
-.plan-price span {
-    font-size: 12px;
+.plan-card--body-price span {
+    color: var(--warm-black);
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 500;
-    color: var(--warm-black);
+    height: 1.2rem;
     position: absolute;
-    top: 63px;
-    left: 56px;
+    width: 1.2rem;
+    top: 40px;
+    left: 70px;
 }
 
-.plan-note {
+.plan-card--body-note {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -530,7 +540,7 @@ main {
     color: #757575;
 }
 
-.card-button {
+.plan-card--body-cta {
     align-self: center;
     color: var(--black);
     display: flex;
