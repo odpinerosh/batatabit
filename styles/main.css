@@ -404,7 +404,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 387px;
-    width: 320px;
+    
+    width: 100%;
 }
 
 .bitcoin-baby_p {
