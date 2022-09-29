@@ -459,6 +459,7 @@ main {
     gap: 10px;
     height: 320px;
     overflow-x: scroll;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
     padding: 0 2rem;
     scroll-snap-type: x proximity;
@@ -575,4 +576,52 @@ main {
     height: 15px;
     vertical-align: text-bottom;
     width: 15px;
+}
+
+footer {
+    align-content: center;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    display: grid;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    grid-template-columns: 1fr 1fr;
+    height: 15rem;
+    justify-content: center;
+    line-height: 1.8rem;
+    min-width: 320px;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+.footer-list--li {
+    margin-bottom: 1rem;
+}
+
+.footer-list--li a {
+    color: var(--just-white);
+    text-decoration: none;
+}
+
+.footer-logo {
+   display: grid;
+   place-content: center;
+}
+
+.footer-logo img {
+    height: 24px;
+    margin: 0 auto;
+    width: 40px;
+}
+.footer-logo p {
+    font-size: .8rem;
+    line-height: 1.8rem;
 }
