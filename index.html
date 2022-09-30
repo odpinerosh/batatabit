@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Batatabit te ayuda a navegar entre los diferentes precios y tendencias de criptomonedas.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -13,7 +14,9 @@
 </head>
 <body>
     <header>
-        <img src="/assets/img/logo.svg" alt="Batatabit Logo">
+        <div class="header--img-container">
+            <img src="/assets/img/logo.svg" alt="Batatabit Logo">
+        </div>
         <div class="header--text-container">
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
@@ -29,7 +32,7 @@
                 <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             </div>
             <div class="tables-wrapper">
-                <button class="btn btn-left" id="btnLeft"></button>
+                <button class="btn btn-left" id="btnLeft" aria-label="Left"></button>
                 <div class="ex-rate_table-container" id="tablesContainer"> <!-- Flex -->
                     <div class="coin-table-cont table-cont">
                         <h2 class="coin-table_title">Monedas</h2>
@@ -80,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn btn-right" id="btnRight"></button>
+                <button class="btn btn-right" id="btnRight" aria-label="Right"></button>
             </div>
             <div class="ex-rate_batata">
                 <span class="span-batata"></span>
@@ -164,9 +167,9 @@
     </main>
     <footer>
         <ul class="footer-list">
-            <li class="footer-list--li"><a href="http://" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-            <li class="footer-list--li"><a href="http://" target="_blank" rel="noopener noreferrer">Chunchbase</a></li>
-            <li class="footer-list--li"><a href="http://" target="_blank" rel="noopener noreferrer">Hackernews</a></li>
+            <li class="footer-list--li"><a href="#" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            <li class="footer-list--li"><a href="#" target="_blank" rel="noopener noreferrer">Chunchbase</a></li>
+            <li class="footer-list--li"><a href="#" target="_blank" rel="noopener noreferrer">Hackernews</a></li>
         </ul>
         <div class="footer-logo">
             <img src="./assets/icons/batata.svg" alt="Batata Logo">

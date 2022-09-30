@@ -15,27 +15,29 @@
 header {
     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     height: 353px;
     left: 0;
     min-width: 320px;
-    position: relative;
     text-align: center;
     top: 0;
     width: 100%;
 }
 
-header > img {
+.header--img-container {
     align-self: center;
-    height: 24px;
-    margin-top: 60px;
-    width: 150px;
+    width: 90%;
+}
+
+.header--img-container img {
+    margin: 0 auto;
+    padding-top: 4rem;
 }
 
 .header--text-container {
     align-self: center;
     margin-top: 40px;
-    max-width: 900px;
+    max-width: 450px;
     min-width: 288px;
     width: 90%;
 }
@@ -45,6 +47,7 @@ header > img {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
+    position: relative;
 }
 
 .header--text-container > p {
@@ -52,7 +55,8 @@ header > img {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    margin-top: 20px;
+    margin-top: 4rem;
+    position: relative;
 }
 
 .header--button {
@@ -74,7 +78,7 @@ header > img {
     padding: 12px 16px;
     position: relative;
     text-align: center;
-    top: 70px;
+    top: 7rem;
     width: 229px;
 }
 
@@ -111,7 +115,7 @@ main {
 .ex-rate_text-container {
     margin: 0 auto;
     width: 90%;
-    max-width: 900px;
+    max-width: 500px;
     min-width: 288px;
 }
 
@@ -135,7 +139,7 @@ main {
 
 .tables-wrapper {
     display: grid;
-    grid-template-columns: 20px calc(1fr - 20px) 20px;
+    grid-template-columns: 20px 1fr 20px;
     grid-template-rows: 1fr;
     grid-template-areas: 'btn-left tables btn-right';
     margin: 0 auto;
@@ -399,7 +403,7 @@ main {
 }
 
 .bitcoin-baby {
-    background-image: url('../assets/img/bitcoinbaby.png');
+    background-image: url('../assets/img/bitcoinbaby2x.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -624,4 +628,49 @@ footer {
 .footer-logo p {
     font-size: .8rem;
     line-height: 1.8rem;
+}
+
+
+@media screen and (min-width: 380px) {
+    .header--button {
+        top: 7.5rem;
+    }
+}
+
+
+@media screen and (min-width: 425px) {
+    .header--button {
+        top: 9.5rem;
+    }
+
+    .ex-rate_batata {
+        top: 7rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .tables-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'tables';
+        width: 500px;
+    }
+
+    .tables-wrapper .btn {
+        display: none;
+    }
+
+    .ex-rate_table-container {
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .ex-rate_batata {
+        top: 9.5rem;
+    }
+
+    .features .cards-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
 }
